@@ -26,3 +26,6 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Install dependencies
+      run: dotnet add package J2534-Sharp --version 1.0.0-CI00036
+      
